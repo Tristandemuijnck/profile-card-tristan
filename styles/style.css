@@ -15,11 +15,11 @@ body {
   justify-content:center;
   align-items:center;
   color:#10214e;
-  background-color: darkred;
+  background-color: black;
 }
 
 .crosses{
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,19 +32,19 @@ body {
   color: white;
   text-align: center;
   background: red;
-  height: 100px;
+  height: 200px;
   position: relative;
-  width: 20px;
+  width: 40px;
   transform: rotate(45deg);
 }
 
 .cross:after {
   background: red;
   content: "";
-  height: 20px;
-  left: -40px;
+  height: 40px;
+  left: -80px;
   position: absolute;
-  top: 40px;
-  width: 100px;
-  transform: rotate(45deg);
+  top: 80px;
+  width: 200px;
+  transform: rotate(0deg);
 }
