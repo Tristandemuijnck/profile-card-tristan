@@ -1,0 +1,50 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height:100vh;
+}
+
+body {
+  height:100vh;
+  font-family: open sans;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#10214e;
+  background-color: black;
+}
+
+.crosses{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross{
+  width: 33%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  background: red;
+  height: 200px;
+  position: relative;
+  width: 40px;
+  transform: rotate(45deg);
+}
+
+.cross:after {
+  background: red;
+  content: "";
+  height: 40px;
+  left: -80px;
+  position: absolute;
+  top: 80px;
+  width: 200px;
+  transform: rotate(0deg);
+}
