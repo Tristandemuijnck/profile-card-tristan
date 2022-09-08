@@ -18,12 +18,13 @@ body {
   background-color: black;
 }
 
-.crosses{
-  width: 80%;
+.crossesMain{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .cross{
@@ -36,6 +37,7 @@ body {
   position: relative;
   width: 40px;
   transform: rotate(45deg);
+  top: 75px;
 }
 
 .cross:after {
@@ -47,4 +49,47 @@ body {
   top: 80px;
   width: 200px;
   transform: rotate(0deg);
+}
+
+.card{
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform-origin: center right;
+  position: relative;
+  cursor: pointer;
+}
+
+.card:hover{
+  background-color: red;
+}
+
+.card:hover .cross{
+  background: white;
+}
+
+.card:hover .cross::after{
+  background: white;
+}
+
+.card.is-flipped{
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card-face{
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.front-card{
+  height: 100%;
+}
+
+.back-card{
+  background: slateblue;
+  transform: rotateY(180deg);
 }
