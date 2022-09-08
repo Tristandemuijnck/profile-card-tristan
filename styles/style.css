@@ -5,11 +5,11 @@
 }
 
 html {
-  height:100vh;
+  height:100%;
 }
 
 body {
-  height:100vh;
+  height:100%;
   font-family: open sans;
   display:flex;
   justify-content:center;
