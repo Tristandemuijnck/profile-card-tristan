@@ -6,7 +6,7 @@ Dit is de repository van mijn visitekaartje. Voor het maken van dit visitekaartj
 
 ![Site gif](https://user-images.githubusercontent.com/43402897/189318151-c2ffd6bf-0bdd-46ff-99d1-7327da5990b6.gif)
 
-## Live versie
+## 🔴 Live versie
 
 De live versie van dit project kunt u hieronder vinden:
 
