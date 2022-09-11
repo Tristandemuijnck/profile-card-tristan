@@ -93,4 +93,17 @@ body {
 .back-card{
   background: slateblue;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-photo{
+  width: 50%;
+}
+
+.card-text{
+  width: 50%;
 }
