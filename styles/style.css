@@ -37,7 +37,8 @@ body {
   position: relative;
   width: 40px;
   transform: rotate(45deg);
-  top: 22%
+  top: 20%;
+  cursor: pointer;
   /* top: 75px; */
 }
 
@@ -60,7 +61,7 @@ body {
   transition: transform 1s;
   transform-origin: center right;
   position: relative;
-  cursor: pointer;
+  
 }
 
 .card:hover{
@@ -91,19 +92,86 @@ body {
 }
 
 .back-card{
-  background: slateblue;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
+  border: 2px solid black;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  /* border-width: 4px;
+  border-style: solid;
+  border-color: white; */
+}
+
+.back-card:hover{
+  background-color: rgb(218, 31, 31);
+  color: black;
+}
+
+.back-card:hover .profile-img{
+  box-shadow: 1px 2px 7px 2px #000000;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .card-photo{
   width: 50%;
+  height: 100%;
+  /* box-shadow: 1px 2px 7px 2px #000000; */
 }
 
 .card-text{
   width: 50%;
+  height: 100%;
+  background: rgb(218, 31, 31);
+  color: black;
 }
+
+.card-text p{
+  border: 1px solid white;
+  background: white;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 5px;
+  text-align: left;
+  margin-top: 6%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 2px 7px 2px #000000;
+}
+
+.card-text h1{
+  margin-top: 3%;
+  background: white;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+  padding: 15px;
+  box-shadow: 1px 2px 7px 2px #000000;
+}
+
+.card-text-alt{
+  width: 50%;
+  height: 100%;
+  background: black;
+  color: red;
+}
+
+.profile-img{
+  border-radius: 2px;
+  width: 30%;
+  margin-top: 2%;
+  border: 2px solid white;
+}
+
+
+/* back-card:hover{
+
+}  */
