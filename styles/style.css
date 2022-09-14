@@ -42,10 +42,11 @@ body{
         height: 100vh;
         margin: auto;
         transform-style: preserve-3d;
-        transition: transform 1s;
+        transition: transform 1.5s ease-in-out;
         transform-origin: center right;
         position: relative;
         z-index: 5;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .info.is-flipped{
@@ -62,22 +63,22 @@ body{
 
     /* Front card */
     .front-card{
-        /* display: flex;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
         align-items: center;
         text-align: center; */
         cursor: pointer;
-        padding: 5px;
     }
 
     /* Back card */
     .back-card{
         transform: rotateY(180deg);
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        /* justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: center; */
         cursor: pointer;
     }
 
@@ -120,6 +121,67 @@ body{
         font-family: 'Raleway', sans-serif;
         text-align: right;
         list-style: none;
+        float: right;
+    }
+
+    /* Skills */
+    .skills{
+        padding: 5px;
+    }
+
+    .skills h1{
+        text-align: right;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .skills p{
+        text-align: left;
+        font-size: 0.9em;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    /* Talen */
+    .talen{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .taal{
+        border: solid 1px white;
+        padding: 5px;
+        margin: 5px;
+        font-size: 0.9em;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+
+    /* Hint circle */
+    .circle {
+        display: flex;
+        border-radius: 50%;
+        background-color: deepskyblue;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        opacity: 0;
+        float: left;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    }
+
+    @keyframes scaleIn{
+        from{
+            transform: scale(.5, .5);
+            opacity: .5;
+        }
+        to{
+            transform: scale(2.5, 2.5);
+            opacity: 0;
+        }
     }
 
 }
