@@ -1,0 +1,176 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  height:100%;
+  font-family: open sans;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#10214e;
+  background-color: black;
+}
+
+.crossesMain{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cross{
+  width: 33%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  background: red;
+  height: 200px;
+  position: relative;
+  width: 40px;
+  transform: rotate(45deg);
+  top: 20%;
+  cursor: pointer;
+  /* top: 75px; */
+}
+
+.cross:after {
+  background: red;
+  content: "";
+  height: 40px;
+  left: -80px;
+  position: absolute;
+  top: 80px;
+  width: 200px;
+  transform: rotate(0deg);
+}
+
+.card{
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform-origin: center right;
+  position: relative;
+  
+}
+
+.card:hover{
+  background-color: red;
+}
+
+.card:hover .cross{
+  background: white;
+}
+
+.card:hover .cross::after{
+  background: white;
+}
+
+.card.is-flipped{
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card-face{
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.front-card{
+  height: 100%;
+}
+
+.back-card{
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  /* border-width: 4px;
+  border-style: solid;
+  border-color: white; */
+}
+
+.back-card:hover{
+  background-color: rgb(218, 31, 31);
+  color: black;
+}
+
+.back-card:hover .profile-img{
+  box-shadow: 1px 2px 7px 2px #000000;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.card-photo{
+  width: 50%;
+  height: 100%;
+  /* box-shadow: 1px 2px 7px 2px #000000; */
+}
+
+.card-text{
+  width: 50%;
+  height: 100%;
+  background: rgb(218, 31, 31);
+  color: black;
+}
+
+.card-text p{
+  border: 1px solid white;
+  background: white;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 5px;
+  text-align: left;
+  margin-top: 6%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 2px 7px 2px #000000;
+}
+
+.card-text h1{
+  margin-top: 3%;
+  background: white;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+  padding: 15px;
+  box-shadow: 1px 2px 7px 2px #000000;
+}
+
+.card-text-alt{
+  width: 50%;
+  height: 100%;
+  background: black;
+  color: red;
+}
+
+.profile-img{
+  border-radius: 2px;
+  width: 30%;
+  margin-top: 2%;
+  border: 2px solid white;
+}
+
+
+/* back-card:hover{
+
+}  */
