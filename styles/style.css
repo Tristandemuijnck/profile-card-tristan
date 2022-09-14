@@ -1,0 +1,132 @@
+body{
+    background: blue; 
+}
+
+/* Mobile CSS */
+@media (max-width: 425px){
+    body{
+        background: black;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    main{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Home section */
+    .home{
+        width: 80%;
+        height: 100vh;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .home h1{
+        font-size: 2rem;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 2px;
+        width: 100%;
+        font-variant: small-caps;
+    }
+
+    /* Info section */
+    .info{
+        color: white;
+        width: 80%;
+        height: 100vh;
+        margin: auto;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+        transform-origin: center right;
+        position: relative;
+        z-index: 5;
+    }
+
+    .info.is-flipped{
+        transform: translateX(-100%) rotateY(-180deg);
+    }
+
+    /* Card Face */
+    .card-face{
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        position: absolute;
+    }
+
+    /* Front card */
+    .front-card{
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; */
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    /* Back card */
+    .back-card{
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /* Over mij */
+    .over-mij{
+        padding: 5px;
+    }
+
+    .over-mij h1{
+        text-align: left;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .over-mij p{
+        text-align: left;
+        font-size: 0.9em;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .pf-img{
+        width: 70%;
+        height: auto;
+        border-radius: 2px;
+        border: solid 1px white;
+    }
+
+    /* Hobby */
+    .hobby{
+        padding: 5px;
+    }
+
+    .hobby h1{
+        text-align: right;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .hobby-list{
+        padding: 5px;
+        font-size: 0.9em;
+        font-family: 'Raleway', sans-serif;
+        text-align: right;
+        list-style: none;
+    }
+
+}
+
+/* Desktop CSS */
+@media (min-width: 768px){
+    body{
+        background: gray;
+    }
+}

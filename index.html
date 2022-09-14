@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Visitekaartje Tristan</title>
 </head>
 <body>
-    Versie 3
+    <main>
+        <!-- Homescreen -->
+        <section id="home" class="home">
+            <h1>Tristan</h1>
+            <!-- Clickable mouse voor scroll naar volgende section -->
+        </section>
+
+
+        <!-- Card flip on click -->
+
+        <!-- Over mij & Studie -->
+        <section id="info" class="info">
+            <div class="card-face front-card">
+                <!-- H1 wie ben ik / profielfoto  -->
+                <!-- Div grid met hobby's -->
+                <div class="over-mij">
+                    <h1>Wie ben ik</h1>
+                    <img class="pf-img" src="./assets/pf.jpg" alt="profielfoto">
+                    <p>Ik ben Tristan de Muijnck. Ik ben 20 jaar oud en woon in Amsterdam-Oost.</p>
+                </div>
+                <div class="hobby">
+                    <h1>Hobby's</h1>
+                    <ul class="hobby-list" dir="rtl">
+                        <li>Voetballen</li>
+                        <li>Gamen</li>
+                        <li>Skateboarden</li>
+                        <li>Coderen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card-face back-card">
+                <!-- H1 studie -->
+                <!-- Div grid met skills -->
+                Achterkant
+            </div>
+        </section>
+
+    </main>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
