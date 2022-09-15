@@ -16,6 +16,44 @@ body{
         height: 100%;
     }
 
+    .crossesMain{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 40%;
+    }
+      
+    .cross{
+        width: 33%;
+        margin: auto;
+        color: white;
+        text-align: center;
+        background: red;
+        height: 200px;
+        position: relative;
+        width: 40px;
+        transform: rotate(45deg);
+        cursor: pointer;
+    }
+      
+    .cross:after {
+        background: red;
+        content: "";
+        height: 40px;
+        left: -80px;
+        position: absolute;
+        top: 80px;
+        width: 200px;
+        transform: rotate(0deg);
+    }
+
     /* Home section */
     .home{
         width: 80%;
