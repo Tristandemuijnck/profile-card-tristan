@@ -1,76 +1,77 @@
 body{
-    background: blue; 
+    background: black;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+/* Crosses */
+.crossesMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 40%;
+}
+  
+.cross{
+    width: 33%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    background: red;
+    height: 200px;
+    position: relative;
+    width: 40px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+  
+.cross:after {
+    background: red;
+    content: "";
+    height: 40px;
+    left: -80px;
+    position: absolute;
+    top: 80px;
+    width: 200px;
+    transform: rotate(0deg);
+}
+
+/* Home section */
+.home{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 /* Mobile CSS */
-@media (max-width: 425px){
-    body{
-        background: black;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
-
-    main{
-        width: 100%;
-        height: 100%;
-    }
-
-    .crossesMain{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        opacity: 40%;
-    }
-      
-    .cross{
-        width: 33%;
-        margin: auto;
-        color: white;
-        text-align: center;
-        background: red;
-        height: 200px;
-        position: relative;
-        width: 40px;
-        transform: rotate(45deg);
-        cursor: pointer;
-    }
-      
-    .cross:after {
-        background: red;
-        content: "";
-        height: 40px;
-        left: -80px;
-        position: absolute;
-        top: 80px;
-        width: 200px;
-        transform: rotate(0deg);
-    }
-
+@media (max-width: 425px){ 
+    
     /* Home section */
-    .home{
-        width: 80%;
-        height: 100vh;
-        margin: auto;
-        text-align: center;
-        display: flex;
-        align-items: center;
-    }
-
     .home h1{
         font-size: 2rem;
         color: white;
         font-family: 'Raleway', sans-serif;
         letter-spacing: 2px;
-        width: 100%;
+        width: auto;
+        margin: auto;
         font-variant: small-caps;
+        border-style: solid none;
     }
 
     /* Info section */
@@ -226,7 +227,17 @@ body{
 
 /* Desktop CSS */
 @media (min-width: 768px){
-    body{
-        background: gray;
+
+    /* Home section */
+    .home h1{
+        font-size: 5rem;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 2px;
+        width: auto;
+        margin: auto;
+        font-variant: small-caps;
+        border-style: solid none;
     }
+
 }
