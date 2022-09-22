@@ -150,17 +150,6 @@ main{
     100% { transform: translateY(15px); opacity: 0;}
 }
 
-footer{
-    color: white;
-    position: relative;
-    bottom: 0;
-    z-index: 200;
-    text-align: center;
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
-}
-
-
 /* MOBILE CSS --------------------------------------------------------- */
 @media (max-width: 425px){ 
     
