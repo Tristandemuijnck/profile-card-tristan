@@ -1,4 +1,4 @@
-# Visitekaartje van Tristan de Muijnck
+# Visitekaartje. 
 
 ## :pencil2: Beschrijving!
 
@@ -8,6 +8,9 @@ Dit is de repository van mijn visitekaartje.
 
 ## :mag: Kenmerken
 * HTML
+  ``
+  ``
+  ``
 * CSS
 * JavaScript
 
